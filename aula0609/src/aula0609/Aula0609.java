@@ -17,15 +17,15 @@ public class Aula0609 {
         int quantMasc = 0, quantFem = 0;
     
         
-        while(escolha != 8){
+        while(escolha != 7){
             
-        System.out.println(" Escolha uma opção: \n1 - Tabela de conversão de polegadas\n2 - Tabela de conversão de Fahrenheit\n3 - Verificação de idade/sexo\n4 - Verificação de Sexo \n5 - Verificação populacional \n6 - Verificação João e Maria\n8 - Sair");
+        System.out.println(" Escolha uma opção: \n1 - Tabela de conversão de polegadas\n2 - Tabela de conversão de Fahrenheit\n3 - Verificação de idade/sexo\n4 - Verificação de Sexo \n5 - Verificação populacional \n6 - Verificação João e Maria\n7 - Sair");
         escolha = grava.nextInt();
         
                 switch(escolha){  
                     case 1: 
                     for(cont = 0;cont < 21; cont++){
-             double conta = cont * 2.54;
+             double conta = cont / 2.54;
              System.out.println(cont + " polegadas = " + conta + " cm");   
         } break;
         
@@ -91,13 +91,14 @@ public class Aula0609 {
                        int contAnos = 0;
                        
                       while(maria < joao){
-                          joao = joao + 0.2;
-                          maria = maria + 0.3;
+                          joao = joao + 0.02;
+                          maria = maria + 0.03;
                           contAnos ++;
                       }
                       System.out.println("Demorará " + contAnos + " Anos para a Maria ultrapassar o João em altura");
                         
                     break;
+                    case 7: break;
                     
                     default:
                     System.out.println("Opção inválida!!");    
